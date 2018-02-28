@@ -40,7 +40,7 @@ public class DictionaryService {
         HttpHeaders headers = initializeRequestHeaders();
         HttpEntity<String> entity = new HttpEntity<>(headers);
 
-        ResponseEntity<String> response = null;
+        ResponseEntity<String> response;
         try{
              response = restTemplate.exchange(oxfordUrl, HttpMethod.GET, entity, String.class);
         }

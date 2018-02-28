@@ -27,6 +27,22 @@ public class DictionaryEntry {
         this.etymology = etymology;
     }
 
+    public String getEntryTitle() {
+        return entryTitle;
+    }
+
+    public String getPartOfSpeech() {
+        return partOfSpeech;
+    }
+
+    public String getDefinition() {
+        return definition;
+    }
+
+    public String getEtymology() {
+        return etymology;
+    }
+
     @Override
     public String toString() {
         return "DictionaryEntry{" +
